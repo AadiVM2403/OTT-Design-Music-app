@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121263;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    left: 0;  
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-icon Link {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 24px; /* Adjust the icon size if needed */
+}
+
+.footer-icon svg,
+.footer-icon rect,
+.footer-icon path,
+.footer-icon circle{
+    stroke:white;
+}
+
+.footer-icon .clicked svg,
+.footer-icon .clicked rect,
+.footer-icon .clicked path,
+.footer-icon .clicked circle {
+    stroke: red;
+}
+
+.footer-icon p {
+    margin: 0;
+    font-size: 16px;
+
+}
+

@@ -1,0 +1,140 @@
+.library {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  margin-right:10%;
+}
+
+.buttons-upper {
+  display: flex;
+  justify-content: center; /* Center horizontally within .double */
+  align-items: center; /* Center vertically within .double */
+  margin-top:2%;
+  height: 10%
+}
+
+.buttons-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-left: 5%;
+  overflow: hidden;
+}
+  
+.circular {
+  width: 150px; /* Set width and height to the same value for a circular button */
+  height: 40%; /* Set width and height to the same value for a circular button */
+  border: 0.5px solid white;
+  border-radius: 15px;
+  background-color: rgba(163, 44, 44, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  color: white;
+  margin:0.5%;
+  font-size:115%;
+}
+   
+.circular.selected {
+  background-color: grey; /* Highlight color for selected button */
+  border-color: black; /* Border color for selected button */
+}
+
+.line {
+  width: 100%;
+  height: 3px; /* Adjust the height of the line as needed */
+  background-color: #fffdfd1e; /* Change the background color of the line */
+  margin-bottom:10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding:20px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-bottom: 5px;
+  margin-right:5% ;
+  margin-left:5% ;
+}
+
+.song-image {
+  max-width: 20%; 
+  height: auto; 
+  margin-right: 10%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  font-size: 80%; 
+  font-weight: bold; 
+  margin: 0; 
+  color: white;
+}
+
+.song-by {
+  font-size: 60%; 
+  color: white; 
+  margin: 0; 
+}
+
+.opp {
+  display: flex;
+  font-size: 30px; 
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
+.all {
+  width: 90%; 
+  height: auto; 
+  border-radius: 15px;
+  background-color: grey;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  color: white;
+  font-size:115%;
+  margin:5%;
+
+}
+
+.all:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 1200px) {
+  .song-name {
+    font-size: 200%;
+  }
+  .song-by {
+    font-size: 125%;
+  }
+  .song-image { 
+    max-width: 15%;
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .song-name {
+    font-size: 150%;
+  }
+  .song-by {
+    font-size: 100%;
+  }
+  .song-image { 
+    max-width: 10%;
+    height: auto;
+  }
+}
+
+
+  

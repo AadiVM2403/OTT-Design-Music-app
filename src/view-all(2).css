@@ -1,0 +1,241 @@
+  .Recent {
+    /* Set Recent to cover the entire body */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  
+  /* Style for the top section (Recently Played Songs) */
+  .top-section {
+    color: white;
+    height: 40vh; /* Set the top section to 40% of the screen height */
+    position: fixed; /* Fix the top section */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the top section is above the bottom section */
+    background-color: rgb(21, 21, 153);
+  }
+  
+  /* Style for the bottom section (All Songs) */
+  .bottom-section {
+    height: 60vh;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0; /* Ensure the bottom section is behind the top section */
+  }
+
+  .right-side{
+    display: flex;
+    margin-left: auto;
+ }
+  
+  .icons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center; /* To vertically center icons */
+    cursor: pointer;
+  }
+  
+  /* Style for individual icons */
+  .icon {
+    height: 100%; /* Cover the entire height of the .icons container */
+    display: flex;
+    justify-content: center; /* To horizontally center icons */
+    align-items: center; /* To vertically center icons */
+    margin:10px;
+  }
+   
+
+  .end{
+    display: flex;
+  }
+
+  .download{
+    margin-right: 50%;
+  }
+
+  .icon svg,circle,line,polyline{
+    stroke:white;
+  }
+
+  .end rect{
+    stroke:white;
+  }
+
+  .type {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 60px;
+  } 
+
+  .page-type {
+    font-weight: 600;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+    padding-top: 20px;
+  }
+
+  .num {
+    padding-top: 10px;
+    font-size: 100%;
+    margin-bottom: 5px;
+  }
+
+  .recent-buttons{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally within .double */
+    align-items: center; /* Center vertically within .double */
+  }
+
+  .share,.play-all {
+    width: 150px; /* Set width and height to the same value for a circular button */
+    height: 50%; /* Set width and height to the same value for a circular button */
+    border: 0.5px solid white;
+    border-radius: 15px;
+    background-color: rgba(163, 44, 44, 0);
+    transition: background-color 0.3s ease;
+    outline: none;
+    color: white;
+    margin:0.5%;
+    font-size:115%;
+    cursor: pointer;
+    margin-right:4%;
+    margin-left:4%;  
+  }
+
+  .share:hover,.play-all:hover {
+    background-color: grey;
+  }
+
+  .name-song {
+    font-size: 80%; 
+    font-weight: bold; 
+    margin: 0; 
+    color: white;
+    
+  }
+  
+  .by-song {
+    font-size: 60%;
+    color: white; 
+    margin: 0; 
+  }
+
+  .content-all {
+    display: flex;
+    align-items: center;
+    padding:20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-bottom: 5px;
+    margin-right:5% ;
+    margin-left:5% ;
+  }
+  
+  
+  .main-type {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  
+  .image-song {
+    max-width: 20%; 
+    height: auto; 
+    margin-right: 10%;
+    cursor: pointer;
+  }
+
+  .end{
+    display: flex;
+    margin-left: auto;
+  }
+
+  .custom-dropdown-container {
+    position: relative;
+  }
+  
+  .custom-dropdown-toggle {
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .custom-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -90px;
+    width: 110px;
+    background-color: rgba(88, 2, 247, 0.603);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .custom-dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-dropdown-content li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .custom-dropdown-content li:hover {
+    background-color: yellow;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .custom-dropdown-container:hover .custom-dropdown-content {
+    display: block;
+  }
+  
+
+
+  @media (min-width: 1200px) {
+    .name-song {
+      font-size: 200%;
+    }
+    .by-song {
+      font-size: 125%;
+    }
+    .image-song { 
+      max-width: 15%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .name-song {
+      font-size: 150%;
+    }
+    .by-song {
+      font-size: 100%;
+    }
+    .image-song { 
+      max-width: 10%;
+      height: auto;
+    }
+  }
+  
+  

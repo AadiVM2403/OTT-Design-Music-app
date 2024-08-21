@@ -1,0 +1,67 @@
+.double-image-container {
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column; /* Display images in a column layout */
+}
+
+.double-image-container .img {
+    width: 100%; /* Each image takes full width */
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    margin-bottom: 10px; /* Adjust as needed for spacing between rows */
+}
+
+.cover-circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.double-image-container {
+    position: relative;
+}
+
+.upper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.lower{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    cursor: pointer;  
+}
+
+.centered{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    cursor: pointer; 
+}
+
+@media (min-width: 1200px) {
+    .cover-circle {
+        width: 100%;
+        height: 300px;
+    }
+    .Title {
+        font-size: 125%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .cover-circle {
+        width: 100%;
+        height: 225px;
+    }
+    .Title {
+        font-size: 100%; 
+    }
+  }
+
+

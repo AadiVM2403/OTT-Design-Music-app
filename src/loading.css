@@ -1,0 +1,13 @@
+/* Loading.css (or your preferred CSS file) */
+
+.loading-container {
+    display: flex; /* Use Flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set container height to full viewport height */
+  }
+  
+  .loading-spinner {
+    text-align: center; /* Center the spinner */
+  }
+  
